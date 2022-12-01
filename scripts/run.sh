@@ -13,7 +13,7 @@ then
     echo "What part number?"
     read part_num
 else
-    day_num=$2
+    part_num=$2
 fi
 
 # Pad the day number
