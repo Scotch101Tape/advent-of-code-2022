@@ -21,8 +21,8 @@ touch ./inputs/day-$day_num.txt
 new_cargo_toml=$(sed 's/^]/    ".\/solutions\/day-'$day_num'-part-1",\n    ".\/solutions\/day-'$day_num'-part-2",\n]/' cargo.toml)
 echo "$new_cargo_toml" > cargo.toml
 
-cargo new ./solutions/day-$day_num-part-1
-cargo new ./solutions/day-$day_num-part-2
+cargo new ./solutions/day-$day_num-part-1 --vcs none
+cargo new ./solutions/day-$day_num-part-2 --vcs none
 
 init_rust_code='use std::fs;
 
