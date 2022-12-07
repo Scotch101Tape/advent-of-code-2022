@@ -1,6 +1,5 @@
 use std::collections::hash_set::HashSet;
 use std::fs;
-use std::hash::Hash;
 
 fn char_to_priority(char: char) -> u32 {
     let code = char as u32;
@@ -44,11 +43,10 @@ fn main() {
         // Find the intersection
         sets.0
             .into_iter()
-            .filter(|char| sets.1.contains(char) && sets.2.contains(char))
-            .next()
+            .find(|char| sets.1.contains(char) && sets.2.contains(char))
             .unwrap()
     })
-    .map(|char| char_to_priority(char))
+    .map(char_to_priority)
     .sum::<u32>();
 
     println!("{}", priorities);
