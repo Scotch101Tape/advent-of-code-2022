@@ -2,7 +2,7 @@ use lazy_static::lazy_static;
 use regex::Regex;
 use std::{collections::VecDeque, fs};
 
-fn parse_stacks(input: &String) -> Vec<VecDeque<char>> {
+fn parse_stacks(input: &str) -> Vec<VecDeque<char>> {
     let mut stacks = Vec::new();
 
     for line in input.lines() {
