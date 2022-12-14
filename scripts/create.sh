@@ -32,7 +32,7 @@ fn main() {
 }
 '
 
-init_cargo_code_part_1 = '[package]
+init_cargo_code_part_1='[package]
 name = "day-'$day_num'-part-1"
 version = "0.1.0"
 edition = "2021"
@@ -41,7 +41,7 @@ edition = "2021"
 util = { path = "../../util" }
 '
 
-init_cargo_code_part_2 = '[package]
+init_cargo_code_part_2='[package]
 name = "day-'$day_num'-part-2"
 version = "0.1.0"
 edition = "2021"
