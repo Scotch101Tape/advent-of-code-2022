@@ -1,8 +1,36 @@
 pub mod point {
-    #[derive(Hash, Copy, Clone)]
+    #[derive(Hash, Copy, Clone, PartialEq, Eq, Debug)]
     pub struct Point<T: Eq + Ord + Copy> {
-        x: T,
-        y: T,
+        pub x: T,
+        pub y: T,
+    }
+
+    impl<T: Eq + Ord + Copy> Point<T> {
+        pub fn new(x: T, y: T) -> Self {
+            Point { x, y }
+        }
+    }
+}
+
+pub mod direction {
+    use super::point::Point;
+
+    pub enum Direction {
+        Up,
+        Down,
+        Left,
+        Right,
+    }
+
+    impl Direction {
+        pub fn to_offset(self) -> Point<i32> {
+            match self {
+                Direction::Right => Point::new(1, 0),
+                Direction::Up => Point::new(0, 1),
+                Direction::Left => Point::new(-1, 0),
+                Direction::Down => Point::new(0, -1),
+            }
+        }
     }
 }
 
