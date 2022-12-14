@@ -1,6 +1,7 @@
 [workspace]
 
 members = [
+    "./util",
     "./solutions/day-01-part-1",
     "./solutions/day-01-part-2",
     "./solutions/day-02-part-1",
