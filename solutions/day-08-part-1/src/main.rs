@@ -44,6 +44,7 @@ fn main() {
 
     for y in 0..numbers[0].len() {
         let mut max = -1;
+        #[allow(clippy::needless_range_loop)]
         for x in 0..numbers.len() {
             let number = numbers[x][y] as i32;
             if number > max {
