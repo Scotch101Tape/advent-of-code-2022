@@ -51,8 +51,8 @@ fn main() {
 
             // Move tail to match if not touching
             let difference = Point::new(
-                (head_position.x - tail_position.x),
-                (head_position.y - tail_position.y),
+                head_position.x - tail_position.x,
+                head_position.y - tail_position.y,
             );
 
             if difference.x.abs() > 1 || difference.y.abs() > 1 {
