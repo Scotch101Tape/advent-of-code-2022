@@ -17,7 +17,7 @@ else
 fi
 
 # Pad the day number
-if [ ${#1} -gt 1 ]
+if [ ${#passed_day_num} -gt 1 ]
 then
     day_num=$passed_day_num
 else
