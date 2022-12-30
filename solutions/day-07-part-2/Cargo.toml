@@ -1,0 +1,8 @@
+[package]
+name = "day-07-part-2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+util = { path = "../../util" }
+

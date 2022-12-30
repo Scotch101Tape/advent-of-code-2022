@@ -18,4 +18,6 @@ members = [
     "./solutions/day-08-part-2",
     "./solutions/day-09-part-1",
     "./solutions/day-09-part-2",
+    "./solutions/day-07-part-1",
+    "./solutions/day-07-part-2",
 ]
